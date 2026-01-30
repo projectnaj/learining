@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصف النظام والسيناريوهات | شحناتي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .desc-page .hero-mini { padding: 2rem 0; background: linear-gradient(135deg, #084d38, #0d6b4d); color: #fff; border-radius: 12px; margin-bottom: 2rem; }
+        .desc-page .section-title { font-size: 1.35rem; color: #0d6b4d; margin: 1.75rem 0 1rem; padding-bottom: 0.35rem; border-bottom: 2px solid #0f8a5f; }
+        .desc-page .scenario-card { background: #fff; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .desc-page .step-num { width: 28px; height: 28px; background: #0d6b4d; color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; margin-left: 0.5rem; }
+        .desc-page ul.feature-list { list-style: none; padding-right: 0; }
+        .desc-page ul.feature-list li { padding: 0.35rem 0; padding-right: 1.5rem; position: relative; }
+        .desc-page ul.feature-list li::before { content: ''; position: absolute; right: 0; top: 0.6rem; width: 8px; height: 8px; background: #0d6b4d; border-radius: 50%; }
+        .desc-page .actor-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .desc-page .actor-customer { background: #d4edda; color: #155724; }
+        .desc-page .actor-courier { background: #cce5ff; color: #004085; }
+        .desc-page .actor-company { background: #e2d5f1; color: #3d2460; }
+        .desc-page .actor-admin { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body class="desc-page">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-box-seam me-2"></i>شحناتي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="system-description.html">وصف النظام</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tasks">المهام</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 5rem; padding-bottom: 3rem;">
+        <div class="hero-mini text-center px-3">
+            <h1 class="h3 mb-2">وصف النظام والسيناريوهات</h1>
+            <p class="mb-0 opacity-90">شحناتي — منصة الشحن الموحدة | ملخص شامل وواضح لما يقدمه النظام وكيفية استخدامه</p>
+        </div>
+
+        <!-- ما هو النظام -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-info-circle me-2"></i>ما هو نظام شحناتي؟</h2>
+            <p class="lead text-muted">
+                <strong>شحناتي</strong> منصة رقمية موحدة تخدم قطاع الشحن والتوصيل داخل المملكة العربية السعودية. بدلاً من تتبع الشحنات من تطبيق كل شركة على حدة، تجمع المنصة <strong>العملاء، شركات الشحن، والمندوبين</strong> في مكان واحد: تتبع موحد، جدولة مرنة، تواصل مباشر، وإشعارات فورية.
+            </p>
+            <p class="mb-0">
+                الهدف: تبسيط تجربة التوصيل، تقليل فشل التوصيلات، ورفع رضا العملاء وشركات الشحن والمندوبين، بما يتماشى مع رؤية السعودية 2030.
+            </p>
+        </section>
+
+        <!-- من يستخدم النظام -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-people me-2"></i>من يستخدم النظام؟ (أطراف النظام)</h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="scenario-card text-center">
+                        <span class="actor-badge actor-customer">عميل</span>
+                        <p class="small text-muted mb-0">الشخص الذي يطلب سلعاً ويستلمها. يتابع شحناته، يجدول التوصيل، ويتواصل مع المندوب.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="scenario-card text-center">
+                        <span class="actor-badge actor-courier">مندوب توصيل</span>
+                        <p class="small text-muted mb-0">الشخص الذي ينفّذ التوصيل. يستلم التوصيلات المعينة له، يحدّث الحالة، ويتواصل مع العميل.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="scenario-card text-center">
+                        <span class="actor-badge actor-company">شركة شحن</span>
+                        <p class="small text-muted mb-0">الجهة التي تدير الشحنات. تضيف الشحنات، تعيّن المندوبين، وتتابع العمليات.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="scenario-card text-center">
+                        <span class="actor-badge actor-admin">مسؤول النظام</span>
+                        <p class="small text-muted mb-0">يدير المستخدمين، إعدادات المنصة، وطلبات الدعم الفني.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ما الذي يقدمه النظام (مختصر) -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-list-check me-2"></i>ما الذي يقدمه النظام؟ (ملخص الوظائف)</h2>
+            <ul class="feature-list">
+                <li><strong>تتبع موحد:</strong> عرض كل الشحنات من شركات متعددة في واجهة واحدة مع التحديث الفوري.</li>
+                <li><strong>جدولة التوصيل:</strong> اختيار تاريخ، فترة زمنية، ومكان التسليم مع إمكانية رفع صورة لنقطة التسليم.</li>
+                <li><strong>إشعارات فورية:</strong> تنبيهات بحالة الشحنة، تأكيد التوصيل، أو التأخير.</li>
+                <li><strong>تواصل مباشر:</strong> قناة تواصل بين العميل والمندوب (محادثة/رسائل) لتنسيق التوصيل.</li>
+                <li><strong>تعيين المندوبين:</strong> شركة الشحن تعيّن التوصيلات للمندوبين؛ المندوب يرى قائمته ويحدّث الحالة.</li>
+                <li><strong>تقييم الخدمة:</strong> العميل يقيّم التجربة بعد التوصيل (نجوم + ملاحظات).</li>
+                <li><strong>الدعم الفني:</strong> أي مستخدم يرسل طلب دعم؛ المسؤول يرد ويغلق الطلب.</li>
+                <li><strong>إدارة المستخدمين والإعدادات:</strong> المسؤول يغيّر أدوار المستخدمين ويعدّل إعدادات المنصة.</li>
+            </ul>
+        </section>
+
+        <!-- سيناريو العميل -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-person me-2"></i>سيناريو العميل</h2>
+            <p class="text-muted mb-3">كيف يستخدم العميل المنصة من البداية حتى استلام الشحنة وتقييم الخدمة.</p>
+            <div class="scenario-card">
+                <ol class="mb-0 ps-3 pe-0" style="list-style: none; counter-reset: step;">
+                    <li class="mb-3"><span class="step-num">1</span> <strong>الدخول:</strong> يختار "عميل" من الصفحة الرئيسية ويدخل إلى لوحة العميل (بدون بريد أو كلمة مرور في النسخة التجريبية).</li>
+                    <li class="mb-3"><span class="step-num">2</span> <strong>عرض الشحنات:</strong> يرى قائمة بجميع شحناته مع الحالة (قيد الانتظار، تم الاستلام، في الطريق، تم التوصيل).</li>
+                    <li class="mb-3"><span class="step-num">3</span> <strong>جدولة التوصيل:</strong> إذا كانت الشحنة "قيد الانتظار" يضغط "جدولة" ويختار تاريخ التوصيل، الفترة الزمنية (مثلاً 14:00–16:00)، وملاحظة نقطة التسليم (مثل "عند البوابة"). يمكنه رفع صورة لموقع التسليم.</li>
+                    <li class="mb-3"><span class="step-num">4</span> <strong>تتبع الشحنة:</strong> عند "تتبع" يفتح شاشة التتبع: خريطة (عند الربط بـ Maps API)، وخط زمني يوضح (تم الطلب → تم الاستلام → في الطريق → تم التوصيل)، مع وقت ومكان التسليم المتوقع.</li>
+                    <li class="mb-3"><span class="step-num">5</span> <strong>التواصل مع المندوب:</strong> يمكنه الضغط "التواصل مع المندوب" لإرسال رسالة أو استفسار بخصوص الشحنة.</li>
+                    <li class="mb-3"><span class="step-num">6</span> <strong>الإشعارات:</strong> يستلم إشعارات عند تغيّر حالة الشحنة (مثلاً "في الطريق"، "تم التوصيل") أو عند تأخير.</li>
+                    <li class="mb-3"><span class="step-num">7</span> <strong>تقييم الخدمة:</strong> بعد "تم التوصيل" يظهر له زر "تقييم الخدمة" فيقيم بالنجوم ويكتب ملاحظات اختيارية.</li>
+                    <li class="mb-0"><span class="step-num">8</span> <strong>الدعم الفني والملف الشخصي:</strong> يمكنه إرسال طلب دعم فني من القائمة، وتعديل بياناته وتفضيلات التوصيل من "الملف الشخصي".</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- سيناريو المندوب -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-truck me-2"></i>سيناريو المندوب</h2>
+            <p class="text-muted mb-3">كيف يستخدم المندوب المنصة لتنفيذ التوصيلات المعينة له.</p>
+            <div class="scenario-card">
+                <ol class="mb-0 ps-3 pe-0" style="list-style: none; counter-reset: step;">
+                    <li class="mb-3"><span class="step-num">1</span> <strong>الدخول:</strong> يختار "مندوب توصيل" ويدخل إلى لوحة المندوب.</li>
+                    <li class="mb-3"><span class="step-num">2</span> <strong>عرض التوصيلات المعينة:</strong> يرى قائمة بالتوصيلات المخصصة له مع التفاصيل (رقم التتبع، من → إلى، تاريخ ووقت التسليم، ملاحظة نقطة التسليم إن وُجدت).</li>
+                    <li class="mb-3"><span class="step-num">3</span> <strong>تحديث حالة التوصيل:</strong> لكل توصيلة يضغط "تحديث الحالة" ويختار: "تم الاستلام" أو "في الطريق" أو "تم التوصيل". النظام يحدّث البيانات ويُبلّغ العميل (إشعار).</li>
+                    <li class="mb-3"><span class="step-num">4</span> <strong>التواصل مع العميل:</strong> يمكنه استخدام "تواصل" لإرسال رسالة للعميل (مثلاً للاتفاق على الوقت أو الموقع).</li>
+                    <li class="mb-0"><span class="step-num">5</span> <strong>الدعم الفني والملف الشخصي:</strong> يمكنه إرسال طلب دعم فني وتعديل بياناته من الملف الشخصي.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- سيناريو شركة الشحن -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-building me-2"></i>سيناريو شركة الشحن</h2>
+            <p class="text-muted mb-3">كيف تدير شركة الشحن الشحنات وتعيين المندوبين.</p>
+            <div class="scenario-card">
+                <ol class="mb-0 ps-3 pe-0" style="list-style: none; counter-reset: step;">
+                    <li class="mb-3"><span class="step-num">1</span> <strong>الدخول:</strong> تختار "شركة شحن" ويدخل مسؤول الشركة إلى لوحة شركة الشحن.</li>
+                    <li class="mb-3"><span class="step-num">2</span> <strong>عرض الشحنات المؤسسية:</strong> يرى جدولاً بجميع الشحنات (رقم التتبع، العميل، المندوب المعيّن، الحالة، من → إلى، تاريخ الجدولة).</li>
+                    <li class="mb-3"><span class="step-num">3</span> <strong>إضافة شحنة جديدة:</strong> يضغط "إضافة شحنة" ويدخل رقم التتبع، يختار العميل، المنشأ، والوجهة. تُضاف الشحنة بحالة "قيد الانتظار".</li>
+                    <li class="mb-3"><span class="step-num">4</span> <strong>تعيين التوصيلات للمندوب:</strong> يضغط "تعيين توصيلات لمندوب" فيرى قائمة الشحنات غير المعينة، يختار شحنة أو أكثر، يختار المندوب، ثم "تعيين". النظام يربط الشحنات بالمندوب ويُبلّغه.</li>
+                    <li class="mb-0"><span class="step-num">5</span> <strong>الدعم الفني والملف الشخصي:</strong> يمكن للشركة إرسال طلب دعم وتعديل بيانات الشركة من الملف الشخصي.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- سيناريو المسؤول -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-shield-lock me-2"></i>سيناريو مسؤول النظام</h2>
+            <p class="text-muted mb-3">كيف يدير المسؤول المستخدمين والإعدادات والدعم الفني.</p>
+            <div class="scenario-card">
+                <ol class="mb-0 ps-3 pe-0" style="list-style: none; counter-reset: step;">
+                    <li class="mb-3"><span class="step-num">1</span> <strong>الدخول:</strong> يختار "مسؤول النظام" ويدخل إلى لوحة المسؤول.</li>
+                    <li class="mb-3"><span class="step-num">2</span> <strong>إدارة المستخدمين:</strong> يرى جدول المستخدمين (بدون عرض بيانات شخصية حساسة). يمكنه تغيير دور كل مستخدم: عميل، مندوب، أو شركة شحن. الصلاحيات تتغيّر تلقائياً حسب الدور.</li>
+                    <li class="mb-3"><span class="step-num">3</span> <strong>إدارة إعدادات النظام:</strong> يفتح "إعدادات النظام" ويعدّل (مثلاً: تفعيل الإشعارات، فترة تحديث التتبع، أقصى عدد شحنات للمندوب، اللغة الافتراضية) ثم يحفظ.</li>
+                    <li class="mb-0"><span class="step-num">4</span> <strong>الدعم الفني:</strong> يرى قائمة طلبات الدعم من العملاء والمندوبين والشركات. يفتح كل طلب، يكتب الرد، ويرسل. يُغلق الطلب بعد الرد.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- تسلسل تفاعلي مختصر -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="bi bi-arrow-left-right me-2"></i>تسلسل تفاعلي مختصر (من البداية للنهاية)</h2>
+            <div class="scenario-card">
+                <p class="mb-2"><strong>1.</strong> شركة الشحن تضيف شحنة جديدة وتُدخل العميل والمنشأ والوجهة.</p>
+                <p class="mb-2"><strong>2.</strong> شركة الشحن تعيّن الشحنة لمندوب معيّن.</p>
+                <p class="mb-2"><strong>3.</strong> العميل يجدول التوصيل (تاريخ، وقت، مكان، واختيارياً صورة نقطة التسليم).</p>
+                <p class="mb-2"><strong>4.</strong> المندوب يرى التوصيلة المعينة ويحدّث الحالة (تم الاستلام → في الطريق → تم التوصيل). العميل يتلقى إشعارات.</p>
+                <p class="mb-2"><strong>5.</strong> العميل والمندوب يمكنهما التواصل عبر المنصة لتنسيق التسليم.</p>
+                <p class="mb-0"><strong>6.</strong> بعد التوصيل، العميل يقيّم الخدمة. المسؤول يدير المستخدمين والإعدادات وطلبات الدعم عند الحاجة.</p>
+            </div>
+        </section>
+
+        <!-- روابط سريعة -->
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
